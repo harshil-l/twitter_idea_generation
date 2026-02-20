@@ -1,0 +1,59 @@
+{
+  "singleTweets": [
+    {
+      "id": 1,
+      "template": "🔥 Just shipped {saas_name} clone in TypeScript! {feature_count} features, built in {hours} hours. #day{day}ofkillingSaaS #typescript #buildinpublic",
+      "content": "🔥 Just shipped AI Resume Builder clone in TypeScript! 4 features, built in 8 hours. #day6ofkillingSaaS #typescript #buildinpublic",
+      "type": "launch"
+    },
+    {
+      "id": 2,
+      "template": "⚡ Reverse-engineered {saas_name} with TypeScript. Type-safe {main_feature} + {secondary_feature} + more! #typescript #opensourceeverything",
+      "content": "⚡ Reverse-engineered AI Resume Builder with TypeScript. Type-safe AI writing + Templates + more! #typescript #opensourceeverything",
+      "type": "progress"
+    },
+    {
+      "id": 3,
+      "template": "💀 Another SaaS bites the dust! {saas_name} → FREE TypeScript clone. Why pay ${pricing}/month? #killingitas #typescript #saas",
+      "content": "💀 Another SaaS bites the dust! AI Resume Builder → FREE TypeScript clone. Why pay $9/month? #killingitas #typescript #saas",
+      "type": "engagement"
+    },
+    {
+      "id": 4,
+      "template": "🚀 Built {saas_name} alternative with {tech_stack} + TypeScript. Full source available! #day{day}ofkillingSaaS",
+      "content": "🚀 Built AI Resume Builder alternative with TypeScript + Next.js + Express + TypeScript. Full source available! #day6ofkillingSaaS",
+      "type": "engagement"
+    }
+  ],
+  "tweetThread": [
+    "🚀 Day 6 of #killingSaaS: Just built AI Resume Builder clone in TypeScript! Thread 🧵",
+    "💡 What it does: Create professional resumes with AI assistance",
+    "⚡ Key features (all type-safe):\n• AI writing\n• Templates\n• PDF export\n• ATS optimization",
+    "🛠️ Tech stack: Next.js + TypeScript frontend, Express + TypeScript backend",
+    "💪 Why TypeScript? Compile-time safety, better DX, fewer bugs in production",
+    "⏱️ Build time: 8 hours from idea to deployment",
+    "📈 Why this matters: Type-safe SaaS = fewer runtime errors = better UX",
+    "🔗 Full TypeScript source code coming soon...\n\n#buildinpublic #typescript #saas #nextjs"
+  ],
+  "hashtags": [
+    "#dayXofkillingSaaS",
+    "#typescript",
+    "#buildinpublic",
+    "#saas",
+    "#nextjs",
+    "#typesafety"
+  ],
+  "suggestedSchedule": {
+    "launch": "Post immediately after TypeScript build completes",
+    "progress": "Daily updates showcasing type safety benefits",
+    "engagement": "Ask about TypeScript vs JavaScript for SaaS",
+    "thread": "Weekly threads about TypeScript development tips"
+  },
+  "contentTips": [
+    "Highlight TypeScript benefits (type safety, IntelliSense)",
+    "Share compile-time error catches",
+    "Show before/after: JS bugs vs TS prevention",
+    "Include code snippets with proper typing",
+    "Engage with TypeScript community hashtags"
+  ]
+}

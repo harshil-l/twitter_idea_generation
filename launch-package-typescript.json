@@ -1,0 +1,63 @@
+{
+  "project": {
+    "name": "AI Resume Builder",
+    "description": "Create professional resumes with AI assistance",
+    "category": "productivity",
+    "difficulty": "medium",
+    "features": [
+      "AI writing",
+      "Templates",
+      "PDF export",
+      "ATS optimization"
+    ],
+    "score": 40
+  },
+  "development": {
+    "location": "./generated-clones/ai-resume-builder",
+    "techStack": "TypeScript + Next.js + Express + Tailwind",
+    "estimatedTime": "8 hours",
+    "status": "TypeScript code generated, fully type-safe, ready for customization"
+  },
+  "deployment": {
+    "frontend": "Deploy to Vercel with TypeScript build",
+    "backend": "Deploy to Railway with TypeScript compilation",
+    "database": "Optional: Add MongoDB/PostgreSQL with TypeScript types",
+    "domain": "Optional: Custom domain with SSL"
+  },
+  "marketing": {
+    "twitterReady": true,
+    "contentGenerated": true,
+    "hashtags": [
+      "#dayXofkillingSaaS",
+      "#typescript",
+      "#buildinpublic",
+      "#saas",
+      "#nextjs",
+      "#typesafety"
+    ],
+    "launchTweet": "🔥 Just shipped AI Resume Builder clone in TypeScript! 4 features, built in 8 hours. #day6ofkillingSaaS #typescript #buildinpublic"
+  },
+  "nextSteps": [
+    "Run npm run type-check in both frontend and backend",
+    "Customize the generated TypeScript code",
+    "Add your branding and colors",
+    "Set up database with proper TypeScript types",
+    "Deploy to production with build step",
+    "Launch with TypeScript-focused Twitter campaign",
+    "Iterate based on feedback"
+  ],
+  "monetization": {
+    "freemium": "Offer basic features free with type-safe API limits",
+    "pro": "Premium features for $9-19/month",
+    "enterprise": "Custom pricing for businesses with SLA",
+    "onetime": "One-time purchase with lifetime TypeScript updates"
+  },
+  "timeline": {
+    "day1": "TypeScript code generation + type checking",
+    "day2": "UI polish + advanced TypeScript features",
+    "day3": "Testing + TypeScript build optimization",
+    "day4": "Launch + TypeScript-focused Twitter campaign",
+    "week2": "Iterate based on user feedback",
+    "month1": "Add advanced features + monetization"
+  }
+}

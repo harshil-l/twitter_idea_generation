@@ -1,0 +1,42 @@
+{
+  "name": "saas-automation-typescript",
+  "version": "2.0.0",
+  "description": "TypeScript SaaS Automation System - Discover, Generate, and Market SaaS applications with full type safety",
+  "main": "dist/SaaSAutomationComplete.js",
+  "scripts": {
+    "start": "node dist/SaaSAutomationComplete.js",
+    "dev": "ts-node src/SaaSAutomationComplete.ts",
+    "build": "tsc",
+    "type-check": "tsc --noEmit",
+    "discovery": "ts-node src/SaaSDiscoverySystem.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harshil-l/twitter_idea_generation.git"
+  },
+  "keywords": [
+    "typescript",
+    "saas",
+    "automation",
+    "nextjs",
+    "express",
+    "code-generation",
+    "twitter-marketing",
+    "buildinpublic"
+  ],
+  "author": "SaaS Automation System",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/harshil-l/twitter_idea_generation/issues"
+  },
+  "homepage": "https://github.com/harshil-l/twitter_idea_generation#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.0",
+    "ts-node-dev": "^2.0.0"
+  }
+}
