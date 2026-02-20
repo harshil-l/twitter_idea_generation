@@ -1,0 +1,61 @@
+{
+  "project": {
+    "name": "AI Resume Builder",
+    "description": "Create professional resumes with AI assistance",
+    "category": "productivity",
+    "difficulty": "medium",
+    "features": [
+      "AI writing",
+      "Templates",
+      "PDF export",
+      "ATS optimization"
+    ],
+    "score": 40
+  },
+  "development": {
+    "location": "./generated-clones/ai-resume-builder",
+    "techStack": "Next.js + Node.js + Tailwind",
+    "estimatedTime": "8 hours",
+    "status": "Code generated, ready for customization"
+  },
+  "deployment": {
+    "frontend": "Deploy to Vercel",
+    "backend": "Deploy to Railway",
+    "database": "Optional: Add MongoDB/PostgreSQL",
+    "domain": "Optional: Custom domain"
+  },
+  "marketing": {
+    "twitterReady": true,
+    "contentGenerated": true,
+    "hashtags": [
+      "#dayXofkillingSaaS",
+      "#buildinpublic",
+      "#saas",
+      "#nextjs",
+      "#startup"
+    ],
+    "launchTweet": "🔥 Just shipped AI Resume Builder clone! 4 features, built in 8 hours. #day19ofkillingSaaS #buildinpublic"
+  },
+  "nextSteps": [
+    "Customize the generated code",
+    "Add your branding and colors",
+    "Set up database if needed",
+    "Deploy to production",
+    "Launch with Twitter campaign",
+    "Iterate based on feedback"
+  ],
+  "monetization": {
+    "freemium": "Offer basic features free",
+    "pro": "Premium features for $9-19/month",
+    "enterprise": "Custom pricing for businesses",
+    "onetime": "One-time purchase option"
+  },
+  "timeline": {
+    "day1": "Code generation + basic customization",
+    "day2": "UI polish + feature enhancement",
+    "day3": "Testing + deployment setup",
+    "day4": "Launch + Twitter campaign",
+    "week2": "Iterate based on user feedback",
+    "month1": "Add advanced features + monetization"
+  }
+}

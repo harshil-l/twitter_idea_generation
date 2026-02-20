@@ -1,0 +1,57 @@
+{
+  "singleTweets": [
+    {
+      "id": 1,
+      "template": "🔥 Just shipped {saas_name} clone! {feature_count} features, built in {hours} hours. #day{day}ofkillingSaaS #buildinpublic",
+      "content": "🔥 Just shipped AI Resume Builder clone! 4 features, built in 8 hours. #day19ofkillingSaaS #buildinpublic",
+      "type": "launch"
+    },
+    {
+      "id": 2,
+      "template": "⚡ Reverse-engineered {saas_name} in record time. {main_feature} + {secondary_feature} + more! #opensourceeverything",
+      "content": "⚡ Reverse-engineered AI Resume Builder in record time. AI writing + Templates + more! #opensourceeverything",
+      "type": "progress"
+    },
+    {
+      "id": 3,
+      "template": "💀 Another SaaS bites the dust! {saas_name} → FREE clone. Why pay ${pricing}/month? #killingitas #saas",
+      "content": "💀 Another SaaS bites the dust! AI Resume Builder → FREE clone. Why pay $9/month? #killingitas #saas",
+      "type": "engagement"
+    },
+    {
+      "id": 4,
+      "template": "🚀 Built {saas_name} alternative with {tech_stack}. Full source available! #day{day}ofkillingSaaS",
+      "content": "🚀 Built AI Resume Builder alternative with Next.js + Node.js. Full source available! #day19ofkillingSaaS",
+      "type": "engagement"
+    }
+  ],
+  "tweetThread": [
+    "🚀 Day 19 of #killingSaaS: Just built AI Resume Builder clone! Thread 🧵",
+    "💡 What it does: Create professional resumes with AI assistance",
+    "⚡ Key features:\n• AI writing\n• Templates\n• PDF export\n• ATS optimization",
+    "🛠️ Tech stack: Next.js frontend + Node.js backend",
+    "⏱️ Build time: 8 hours from idea to deployment",
+    "📈 Why this matters: Proves you can build fast, launch faster",
+    "🔗 Source code & demo coming soon...\n\n#buildinpublic #saas #nextjs"
+  ],
+  "hashtags": [
+    "#dayXofkillingSaaS",
+    "#buildinpublic",
+    "#saas",
+    "#nextjs",
+    "#startup"
+  ],
+  "suggestedSchedule": {
+    "launch": "Post immediately after deployment",
+    "progress": "Daily updates during development",
+    "engagement": "Ask questions, share insights",
+    "thread": "Weekly deep-dive threads"
+  },
+  "contentTips": [
+    "Include screenshots of your app",
+    "Share build process insights",
+    "Engage with other builders",
+    "Use relevant hashtags consistently",
+    "Post at peak engagement times"
+  ]
+}

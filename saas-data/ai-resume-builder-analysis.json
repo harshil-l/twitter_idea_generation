@@ -1,0 +1,67 @@
+{
+  "name": "AI Resume Builder",
+  "url": "https://airesume.builder",
+  "timestamp": "2026-02-20T09:04:04.173Z",
+  "coreFeatures": [
+    {
+      "name": "AI writing",
+      "priority": "low",
+      "complexity": "high",
+      "implementation": "Custom implementation required"
+    },
+    {
+      "name": "Templates",
+      "priority": "low",
+      "complexity": "low",
+      "implementation": "Custom implementation required"
+    },
+    {
+      "name": "PDF export",
+      "priority": "medium",
+      "complexity": "medium",
+      "implementation": "jsPDF or ExcelJS"
+    },
+    {
+      "name": "ATS optimization",
+      "priority": "low",
+      "complexity": "low",
+      "implementation": "Custom implementation required"
+    }
+  ],
+  "techRequirements": {
+    "frontend": "React/Next.js",
+    "backend": "Node.js/Express",
+    "database": "MongoDB for simple document storage",
+    "hosting": "Vercel (frontend) + Railway/Render (backend)",
+    "cdn": "AWS S3/CloudFront for assets",
+    "monitoring": "Sentry for error tracking",
+    "analytics": "PostHog or Google Analytics"
+  },
+  "uiComponents": [
+    "Header",
+    "Sidebar",
+    "Dashboard",
+    "Footer"
+  ],
+  "databaseSchema": {
+    "users": {
+      "id": "UUID PRIMARY KEY",
+      "email": "VARCHAR(255) UNIQUE",
+      "password_hash": "VARCHAR(255)",
+      "name": "VARCHAR(100)",
+      "created_at": "TIMESTAMP",
+      "updated_at": "TIMESTAMP"
+    }
+  },
+  "apiEndpoints": [
+    "POST /api/auth/login",
+    "POST /api/auth/register",
+    "GET /api/auth/me",
+    "GET /api/dashboard/stats"
+  ],
+  "developmentEstimate": {
+    "mvp": 7,
+    "fullFeature": 12,
+    "polish": 15
+  }
+}

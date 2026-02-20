@@ -1,0 +1,157 @@
+[
+  {
+    "name": "AI Resume Builder",
+    "url": "https://airesume.builder",
+    "description": "Create professional resumes with AI assistance",
+    "category": "productivity",
+    "votes": 1250,
+    "comments": 89,
+    "features": [
+      "AI writing",
+      "Templates",
+      "PDF export",
+      "ATS optimization"
+    ],
+    "pricing": "$9/month",
+    "techStack": "React, Node.js, OpenAI API",
+    "cloneDifficulty": "medium",
+    "marketPotential": "high",
+    "source": "producthunt",
+    "score": 40
+  },
+  {
+    "name": "Quick QR Generator",
+    "url": "https://quickqr.app",
+    "description": "Generate QR codes for any content instantly",
+    "category": "utility",
+    "votes": 890,
+    "comments": 45,
+    "features": [
+      "QR generation",
+      "Custom designs",
+      "Analytics",
+      "Bulk creation"
+    ],
+    "pricing": "$5/month",
+    "techStack": "React, Node.js",
+    "cloneDifficulty": "easy",
+    "marketPotential": "medium",
+    "source": "producthunt",
+    "score": 38
+  },
+  {
+    "name": "Team Dashboard Pro",
+    "url": "https://teamdash.pro",
+    "description": "All-in-one team collaboration dashboard",
+    "category": "productivity",
+    "votes": 2100,
+    "comments": 156,
+    "features": [
+      "Real-time chat",
+      "Task management",
+      "Analytics",
+      "Integrations"
+    ],
+    "pricing": "$15/month per user",
+    "techStack": "React, Node.js, Socket.io",
+    "cloneDifficulty": "hard",
+    "marketPotential": "high",
+    "source": "producthunt",
+    "score": 37
+  },
+  {
+    "name": "Open Source CRM",
+    "url": "https://github.com/crm-os/crm",
+    "description": "Free, open-source customer relationship management",
+    "category": "business",
+    "stars": 5600,
+    "forks": 890,
+    "features": [
+      "Contact management",
+      "Deal tracking",
+      "Email integration",
+      "Reports"
+    ],
+    "pricing": "Free + Pro $20/month",
+    "techStack": "React, Node.js, PostgreSQL",
+    "cloneDifficulty": "hard",
+    "marketPotential": "high",
+    "source": "github",
+    "score": 29
+  },
+  {
+    "name": "LinkTree Clone",
+    "url": "https://biolinks.app",
+    "description": "Create a single link for all your social profiles",
+    "category": "social",
+    "funding": "$500K",
+    "features": [
+      "Custom links",
+      "Analytics",
+      "Themes",
+      "QR codes"
+    ],
+    "pricing": "$3/month",
+    "techStack": "Next.js, Node.js",
+    "cloneDifficulty": "easy",
+    "marketPotential": "high",
+    "source": "ycombinator",
+    "score": 26
+  },
+  {
+    "name": "Form Builder X",
+    "url": "https://formbuilderx.com",
+    "description": "Drag & drop form builder with analytics",
+    "category": "productivity",
+    "funding": "$1.2M",
+    "features": [
+      "Drag & drop",
+      "Conditional logic",
+      "Integrations",
+      "Analytics"
+    ],
+    "pricing": "$10/month",
+    "techStack": "React, Node.js, MongoDB",
+    "cloneDifficulty": "medium",
+    "marketPotential": "high",
+    "source": "ycombinator",
+    "score": 25
+  },
+  {
+    "name": "Screenshot API",
+    "url": "https://screenapi.dev",
+    "description": "API to capture website screenshots",
+    "category": "developer-tools",
+    "features": [
+      "REST API",
+      "Multiple formats",
+      "Bulk processing",
+      "Webhooks"
+    ],
+    "pricing": "$0.01/screenshot",
+    "techStack": "Node.js, Puppeteer, AWS",
+    "cloneDifficulty": "medium",
+    "marketPotential": "medium",
+    "source": "betalist",
+    "score": 20
+  },
+  {
+    "name": "Micro SaaS Tracker",
+    "url": "https://microtracker.app",
+    "description": "Track your micro SaaS revenue and metrics",
+    "category": "analytics",
+    "revenue": "$3K MRR",
+    "features": [
+      "Revenue tracking",
+      "Metrics dashboard",
+      "Goal setting",
+      "Reports"
+    ],
+    "pricing": "$9/month",
+    "techStack": "Vue.js, Laravel",
+    "cloneDifficulty": "medium",
+    "marketPotential": "medium",
+    "source": "indiehackers",
+    "score": 16
+  }
+]
