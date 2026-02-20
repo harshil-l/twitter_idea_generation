@@ -1,0 +1,184 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./micasa.db"
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String
+  password  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  homes   Home[]
+  vendors Vendor[]
+
+  @@map("users")
+}
+
+model Home {
+  id           String   @id @default(cuid())
+  name         String
+  address      String?
+  type         String   @default("HOUSE") // HOUSE, APARTMENT, CONDO, TOWNHOUSE, OTHER
+  yearBuilt    Int?
+  squareFootage Int?
+  bedrooms     Int?
+  bathrooms    Int?
+  description  String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  userId String
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  appliances       Appliance[]
+  maintenanceTasks MaintenanceTask[]
+  incidents        Incident[]
+  projects         Project[]
+  documents        Document[]
+
+  @@map("homes")
+}
+
+model Appliance {
+  id               String    @id @default(cuid())
+  name             String
+  category         String    @default("OTHER") // HEATING, COOLING, KITCHEN, LAUNDRY, ELECTRICAL, PLUMBING, OTHER
+  brand            String?
+  model            String?
+  serialNumber     String?
+  purchaseDate     DateTime?
+  warrantyExpiry   DateTime?
+  installationDate DateTime?
+  location         String?
+  energyRating     String?
+  notes            String?
+  isActive         Boolean   @default(true)
+  photoUrl         String?
+  createdAt        DateTime  @default(now())
+  updatedAt        DateTime  @updatedAt
+
+  homeId String
+  home   Home   @relation(fields: [homeId], references: [id], onDelete: Cascade)
+
+  maintenanceTasks MaintenanceTask[]
+  incidents        Incident[]
+  documents        Document[]
+
+  @@map("appliances")
+}
+
+model MaintenanceTask {
+  id                  String            @id @default(cuid())
+  title               String
+  description         String?
+  scheduledDate       DateTime
+  completedAt         DateTime?
+  priority            String            @default("MEDIUM") // LOW, MEDIUM, HIGH, URGENT
+  category            String            @default("ROUTINE") // ROUTINE, SEASONAL, REPAIR, INSPECTION, CLEANING, OTHER
+  estimatedDuration   Int?              // in minutes
+  cost                Float?
+  actualCost          Float?
+  notes               String?
+  isRecurring         Boolean           @default(false)
+  recurringInterval   String?           // WEEKLY, MONTHLY, QUARTERLY, YEARLY
+  status              String            @default("PENDING") // PENDING, IN_PROGRESS, COMPLETED, CANCELLED
+  createdAt           DateTime          @default(now())
+  updatedAt           DateTime          @updatedAt
+
+  homeId String?
+  home   Home? @relation(fields: [homeId], references: [id], onDelete: Cascade)
+
+  applianceId String?
+  appliance   Appliance? @relation(fields: [applianceId], references: [id])
+
+  @@map("maintenance_tasks")
+}
+
+model Incident {
+  id          String           @id @default(cuid())
+  title       String
+  description String?
+  severity    String           @default("MEDIUM") // LOW, MEDIUM, HIGH, CRITICAL
+  status      String           @default("OPEN") // OPEN, IN_PROGRESS, RESOLVED, CLOSED
+  cost        Float?
+  reportedAt  DateTime         @default(now())
+  resolvedAt  DateTime?
+  notes       String?
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+
+  homeId String?
+  home   Home? @relation(fields: [homeId], references: [id], onDelete: Cascade)
+
+  applianceId String?
+  appliance   Appliance? @relation(fields: [applianceId], references: [id])
+
+  @@map("incidents")
+}
+
+model Project {
+  id                    String        @id @default(cuid())
+  name                  String
+  description           String?
+  status                String        @default("PLANNING") // PLANNING, IN_PROGRESS, COMPLETED, ON_HOLD, CANCELLED
+  priority              String        @default("MEDIUM") // LOW, MEDIUM, HIGH, URGENT
+  budget                Float?
+  actualCost            Float?
+  startDate             DateTime?
+  targetCompletionDate  DateTime?
+  actualCompletionDate  DateTime?
+  notes                 String?
+  createdAt             DateTime      @default(now())
+  updatedAt             DateTime      @updatedAt
+
+  homeId String
+  home   Home   @relation(fields: [homeId], references: [id], onDelete: Cascade)
+
+  @@map("projects")
+}
+
+model Vendor {
+  id       String        @id @default(cuid())
+  name     String
+  category String        @default("OTHER") // PLUMBER, ELECTRICIAN, HVAC, GENERAL_CONTRACTOR, APPLIANCE_REPAIR, LANDSCAPING, CLEANING, OTHER
+  phone    String?
+  email    String?
+  address  String?
+  website  String?
+  notes    String?
+  rating   Int?          // 1-5 stars
+  createdAt DateTime     @default(now())
+  updatedAt DateTime     @updatedAt
+
+  userId String
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("vendors")
+}
+
+model Document {
+  id          String       @id @default(cuid())
+  fileName    String
+  fileType    String
+  fileSize    Int
+  filePath    String
+  category    String       @default("OTHER") // WARRANTY, MANUAL, RECEIPT, PHOTO, INSURANCE, OTHER
+  description String?
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+
+  homeId String?
+  home   Home? @relation(fields: [homeId], references: [id], onDelete: Cascade)
+
+  applianceId String?
+  appliance   Appliance? @relation(fields: [applianceId], references: [id])
+
+  @@map("documents")
+}
